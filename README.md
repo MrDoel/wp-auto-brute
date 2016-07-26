@@ -9,7 +9,7 @@ To brute-force based on enumerated username, i use [WordPress Brute Force](https
 
 `pip install beautifulsoup4`
 
-##How to Run
+##How to Use
 `wpbrute.py [-h] [-v] -u url.txt -l list.txt`
 
 **-u** : File that contains URL list
