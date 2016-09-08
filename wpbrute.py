@@ -105,12 +105,12 @@ def randomAgentGen():
 
 def brute(ur,user):
     print "\n[*]Running Brute Force Method #1"
-    cmd="python brute.py -S -t %s -u %s -w %s" %(ur,user,lists)
+    cmd="python brute.py -S -t %s -u '%s' -w %s" %(ur,user,lists)
     os.system(cmd)
 
 def brutesame(link,usr,list):
     print '\n[*]Running Brute Force Method #2'
-    cmd2="python brute.py -S -t %s -u %s -w %s" %(link,usr,list)
+    cmd2="python brute.py -S -t %s -u '%s' -w %s" %(link,usr,list)
     os.system(cmd2)
 
 def scan(url1):
