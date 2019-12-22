@@ -1,15 +1,16 @@
-#WP Auto Brute
+# WP Auto Brute
 Auto enumerate WordPress users and run brute force attack!
-##Description
+
+## Description
 WP Auto Brute is a tool that serves to Brute-Force attack automatically against enumerated users. This tool works by enumerate username based format **/author?=[ID]**.
 
 To brute-force based on enumerated username, i use [WordPress Brute Force](https://github.com/claudioviviani/wordbrutepress) script by Claudio Viviani which have been combined in this tool. 
-##Requirement
+## Requirement
 `pip install httplib2`
 
 `pip install beautifulsoup4`
 
-##How to Use
+## How to Use
 `./wpbrute.py [-h] [-v] -u url.txt -l list.txt`
 
 **-u** : File that contains URL list
